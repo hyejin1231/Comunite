@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.practice210622">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".CustomApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Practice210622"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".EditPage"></activity>
+        <activity android:name=".MyContentEdit2" />
+        <activity android:name=".MyContentEdit" />
+        <activity android:name=".ViewPage" />
+        <activity android:name=".WritePage" />
+        <activity android:name=".MainBoard" />
+        <activity android:name=".Edit_Mypage" />
+        <activity android:name=".MainActivity2" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="62054b4d50f4e66ad7f084bb8d1560f8" />
+    </application>
+
+</manifest>

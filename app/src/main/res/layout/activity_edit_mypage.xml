@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edit_Mypage">
+
+    <ImageView
+        android:id="@+id/iv_editProfile"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginTop="32dp"
+        android:text="email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_editProfile" />
+
+    <TextView
+        android:id="@+id/tv_editEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/iv_editProfile" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="nickName"
+        app:layout_constraintBottom_toBottomOf="@+id/et_editNickName"
+        app:layout_constraintEnd_toStartOf="@+id/et_editNickName"
+        app:layout_constraintTop_toTopOf="@+id/et_editNickName" />
+
+    <EditText
+        android:id="@+id/et_editNickName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="nickName"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/tv_editEmail"
+        app:layout_constraintTop_toBottomOf="@+id/tv_editEmail" />
+
+    <Button
+        android:id="@+id/btn_setting"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Setting"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_editProfile"
+        app:layout_constraintStart_toEndOf="@+id/iv_editProfile" />
+
+    <Button
+        android:id="@+id/btn_default"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="default"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_setting"
+        app:layout_constraintStart_toStartOf="@+id/btn_setting" />
+
+    <Button
+        android:id="@+id/btn_editOk"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="40dp"
+        android:text="Edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
